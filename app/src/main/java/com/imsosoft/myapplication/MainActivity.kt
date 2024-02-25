@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         animals.food()
         println(implementation.printFunc())
+        println(implementation.printFunc2())
 
     }
 }

@@ -11,10 +11,18 @@ import javax.inject.Singleton
 @Module
 class HiltModules {
 
+    @FirstImplementor
     @Singleton
     @Provides
     fun providerFunctionFirst(): HiltInterface {
         return FirstImplementation()
+    }
+
+    @SecondImplementor
+    @Singleton
+    @Provides
+    fun providerFunctionSecond(): HiltInterface {
+        return SecondImplementation()
     }
 
 }
