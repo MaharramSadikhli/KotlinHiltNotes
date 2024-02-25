@@ -8,18 +8,18 @@ import androidx.core.view.WindowInsetsCompat
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-//@AndroidEntryPoint
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
 
-//    @Inject
-//    lateinit var animals: Animals
+    @Inject
+    lateinit var animals: Animals
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-//        animals.food()
+        animals.food()
 
     }
 }
