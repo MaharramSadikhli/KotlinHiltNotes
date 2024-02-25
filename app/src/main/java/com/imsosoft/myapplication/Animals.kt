@@ -1,6 +1,13 @@
 package com.imsosoft.myapplication
 
-class Animals(cat: Cat, dog: Dog) {
+import javax.inject.Inject
+import javax.inject.Singleton
+
+
+@Singleton
+class Animals
+    @Inject
+    constructor(cat: Cat, dog: Dog) {
 
     fun food() {
         println("animals ate food")

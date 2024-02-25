@@ -1,4 +1,7 @@
 package com.imsosoft.myapplication
 
-class Dog {
+import javax.inject.Inject
+
+
+class Dog @Inject constructor() {
 }

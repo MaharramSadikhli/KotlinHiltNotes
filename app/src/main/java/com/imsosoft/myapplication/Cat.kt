@@ -1,4 +1,6 @@
 package com.imsosoft.myapplication
 
-class Cat {
+import javax.inject.Inject
+
+class Cat @Inject constructor() {
 }
