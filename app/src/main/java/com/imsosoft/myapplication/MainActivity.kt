@@ -14,12 +14,16 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var animals: Animals
 
+    @Inject
+    lateinit var implementation: ImplementationClass
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
         animals.food()
+        println(implementation.printFunc())
 
     }
 }
